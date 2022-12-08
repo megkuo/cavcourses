@@ -678,7 +678,7 @@ def schedule_add(request, section_id):
 
 
         # if schedule exists, add the class and re-render
-        if Schedule.objects.filter(scheduleUser=theUser)[0]:
+        if Schedule.objects.get(scheduleUser=theUser):
             print("c")
 
             schedule_obj = Schedule.objects.get(scheduleUser=theUser)
@@ -1004,13 +1004,13 @@ def schedule_view(request, userID=None):
     if Account.objects.filter(id=userID):
         theUser = Account.objects.get(id=userID)
 
-        if not Schedule.objects.filter(scheduleUser=theUser)[0]:
+        if not Schedule.objects.get(scheduleUser=theUser):
             # makes a Schedule for the user if they don't already have one
             schedule_obj = Schedule.objects.create(scheduleUser=theUser)
             schedule_obj.save()
 
         # if sched exists, pass its context onto schedule template to see it
-        if Schedule.objects.filter(scheduleUser=theUser)[0]:
+        if Schedule.objects.get(scheduleUser=theUser):
 
             schedule_obj = Schedule.objects.get(scheduleUser=theUser)
             schedule_context = get_user_info(request)
@@ -1109,13 +1109,13 @@ def schedule_view_valid_add(request, userID=None, section_id=None):
     if Account.objects.filter(id=userID)[0]:
         theUser = Account.objects.get(id=userID)
 
-        if not Schedule.objects.filter(scheduleUser=theUser)[0]:
+        if not Schedule.objects.get(scheduleUser=theUser):
             # makes a Schedule for the user if they don't already have one
             schedule_obj = Schedule.objects.create(scheduleUser=theUser)
             schedule_obj.save()
 
         # if sched exists, pass its context onto schedule template to see it
-        if Schedule.objects.filter(scheduleUser=theUser)[0]:
+        if Schedule.objects.get(scheduleUser=theUser):
 
             schedule_obj = Schedule.objects.get(scheduleUser=theUser)
             schedule_context = get_user_info(request)
@@ -1212,16 +1212,16 @@ def schedule_view_invalid_add(request, userID=None, section_id=None, conflict_id
 
         
     # TODO change to use parameter user instead to make generic
-    if Account.objects.filter(id=userID)[0]:
+    if Account.objects.get(id=userID):
         theUser = Account.objects.get(id=userID)
 
-        if not Schedule.objects.filter(scheduleUser=theUser)[0]:
+        if not Schedule.objects.get(scheduleUser=theUser):
             # makes a Schedule for the user if they don't already have one
             schedule_obj = Schedule.objects.create(scheduleUser=theUser)
             schedule_obj.save()
 
         # if sched exists, pass its context onto schedule template to see it
-        if Schedule.objects.filter(scheduleUser=theUser)[0]:
+        if Schedule.objects.get(scheduleUser=theUser):
 
             schedule_obj = Schedule.objects.get(scheduleUser=theUser)
             schedule_context = get_user_info(request)
