@@ -7,19 +7,19 @@ https://github.com/othneildrew/Best-README-Template#readme
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/uva-cs3240-f22/project-a-27">
+<!--   <a href="https://github.com/uva-cs3240-f22/project-a-27">
     <img src="#" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
-  <h3 align="center">Group A-27: Lous List'</h3>
+  <h3 align="center">Group A-27: CavCourses/New Lous List</h3>
 
   <p align="center">
-    Write description here. Need to make a logo for our project.
+    A website for browsing classes, creating class schedules, and viewing friends' schedules. Created for CS 3240: Advanced Software Development in a group project.
     <br />
-    <a href="https://a27-lous-list.herokuapp.com/"><strong>See our app! »</strong></a>
+    <a href="https://cavcourses.herokuapp.com/"><strong>See our app! »</strong></a>
     <br />
     <br />
-    <a href="https://f22.cs3240.org/project.html">Project Page</a>
+    <a href="https://github.com/megkuo/cavcourses">Project Page</a>
     ·
     <a href="https://f22.cs3240.org/lutherslist.html">Luther's List API</a>
     ·
@@ -38,14 +38,10 @@ https://github.com/othneildrew/Best-README-Template#readme
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#my-contributions">My Contributions</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -57,16 +53,14 @@ https://github.com/othneildrew/Best-README-Template#readme
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Lous List Screen Shot][product-screenshot]](https://a27-lous-list.herokuapp.com/)
-
 This is for the University of Virginia's CS 3240 (Advanced Software Development) course. Our team chose to build a Web App modeling the University of Virginia's beloved <a href="https://louslist.org/">Lous List</a>.
 
-Here are the Lous' List Specific Requirements:
-* Students must be ablte to view an searc classes, separeated into logical catagories.
+Here are the project-specific requirements we implemented:
+* Students must be able to view and search classes, separated into logical categories (ex. by department).
 * Students must be able to save a prospective schedule for a given semester. The system should prevent time conflicts and prevent signing up for multiple sections of the same course.
 * Students should be able to “friend” other students to see their schedule and leave a comment on their schedule.
 
-Here are the Projects General Requirements:
+Here are the general project requirements:
 * All projects must incorporate Google user accounts as the primary way that someone logs into the system.
 * All users must have an account of some kind where they can store their personal information relevant to the app.
 * All users must be able to maintain a list of “friends” in the app, where they can view key information about the other user. See the project options for details.
@@ -83,37 +77,30 @@ Here are the Projects General Requirements:
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. 
 
 
-* Need to figure out how to make the Django Shield
+* Django
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### My Contributions
 
+Here is a description of what I contributed to this project as the Scrum Master of my group:
 
-<!-- GETTING STARTED -->
-## Getting Started
+Technical Contributions:
+* Integrated Google Login via Google Cloud API/Django-allauth
+* Revamped the schedules feature so that classes would display in the correct chronological order on the correct days, and would also fill the grid for the exact duration of the class (ex. a 50 minute class doesn't take up the whole hour/row on the schedule)
+* Added avatars for users' accounts
+* Created the header for the website using Bootstrap
+* Helped to integrate team members' code, ex. updating the code for the advanced search to utilize data stored in the database, rather than pulling from the Luther's List API each time
+* Added the comments feature to schedules
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Interpersonal Contributions:
+* Organized group meetings, oordinated distribution of responsibilities for each 2-week sprint, maintained communication within the group and with course staff
+* Ensured we fulfilled all necessary requirements
 
-### Prerequisites
-
-List prerequestites and required libraries here.
-
-<!-- ROADMAP -->
-## Roadmap
-
-Build this out with specifics for each sprint.
-
-- [x] <a href="#">Sprint 1</a>
-- [x] <a href="#">Sprint 2</a>
-- [x] <a href="#">Sprint 3</a>
-- [x] <a href="#">Sprint 4</a>
-- [ ] <a href="#">Sprint 5</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LICENSE -->
 ## License
@@ -142,7 +129,7 @@ Project Link: [https://github.com/uva-cs3240-f22/project-a-27](https://github.co
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Acknowledgements need to be added.
+Thank you to the CS 3240 Staff for helping us accomplish this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,3 +142,4 @@ Acknowledgements need to be added.
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [product-screenshot]: https://www.virginia.edu/sites/default/files/201904-sunset.jpg
+![image](https://user-images.githubusercontent.com/83975442/206331274-d01c67ed-16ac-456f-987b-076f7cf723cd.png)
