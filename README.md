@@ -42,12 +42,13 @@ https://github.com/othneildrew/Best-README-Template#readme
         <li><a href="#my-contributions">My Contributions</a></li>
       </ul>
     </li>
+    <li><a href="#importnant-notes">Important Notes</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -71,15 +72,14 @@ Here are the general project requirements:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. 
-
-
-* Django
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![HTML](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,12 +93,56 @@ Technical Contributions:
 * Added avatars for users' accounts
 * Created the header for the website using Bootstrap
 * Helped to integrate team members' code, ex. updating the code for the advanced search to utilize data stored in the database, rather than pulling from the Luther's List API each time
-* Added the comments feature to schedules
+* Added the comments feature so that friends can comment on each others' schedules
 
 Interpersonal Contributions:
-* Organized group meetings, oordinated distribution of responsibilities for each 2-week sprint, maintained communication within the group and with course staff
+* Organized group meetings, coordinated distribution of responsibilities for each 2-week sprint, maintained communication within the group and with course staff
 * Ensured we fulfilled all necessary requirements
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Important Notes
+
+This project is not flawless. Due to unforseen tragic events during the semester and their effects on the university and student body, as well as the time constraints imposed by final exams, this website was never fully finished. There are still plenty of bugs here and there if you care to look for them, notably one that prevents certain accounts from adding classes to their schedule during a slicing issue.
+
+Known bugs:
+* Query issue that prevents some accounts from adding classes to their schedule
+* Some users profile pictures have trouble rendering
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Due to the fact that Heroku no longer provides free hosting, the app hosted on Heroku may not be currently available. However, you can see a copy of the app locally using Django's development server.
+
+### Prerequisites
+
+* Django <a href="https://docs.djangoproject.com/en/4.1/topics/install/"> (Django Installation Directions) </a>
+* A Virtual Environment <a href="https://www.javatpoint.com/django-virtual-environment-setup"> (Venv Installation Directions) </a>
+
+### Directions
+
+1. Clone this repository locally <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjqrIGs-_n7AhUdGVkFHfBFAEEQFnoECBAQAQ&url=https%3A%2F%2Fdocs.github.com%2Fen%2Frepositories%2Fcreating-and-managing-repositories%2Fcloning-a-repository&usg=AOvVaw1A0BC2W4ipC0YHVzLxQPgS"> (How to clone repos) </a>
+2. Activate your virtual environment
+```bash
+source your-venv-name/bin/activate
+```
+3. Install the requirements
+```bash
+pip install -r requirements.txt
+```
+4. Run the server locally
+```bash
+python manage.py runserver
+```
+5. Go to the URL listed in the terminal output to see the app.
+6. To close the app, exit out of that tap and hit Ctl+C in your terminal
+7. Deactivate your virtual environment.
+```bash
+deactivate your-venv-name
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,7 +173,7 @@ Project Link: [https://github.com/uva-cs3240-f22/project-a-27](https://github.co
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Thank you to the CS 3240 Staff for helping us accomplish this project.
+Thank you to the CS 3240 Staff for helping us accomplish this project, and Professor Sheriff and Professor McBurney for creating the Luther's List API (linked at top of page) and enabling this project as part of their curriculum. Also, thank you to Connor Wilson for his contributions to this README.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
