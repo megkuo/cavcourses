@@ -47,6 +47,7 @@ https://github.com/othneildrew/Best-README-Template#readme
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+      <li><a href="#citations">Citations</a></li>
   </ol>
 </details>
 
@@ -164,7 +165,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * Johnny Lindsey      - jbl5xq@virginia.edu  (Requirements)
 * Nathaniel Hershel   - nth5pdk@virginia.edu (Testing)
 
-Project Link: [https://github.com/uva-cs3240-f22/project-a-27](https://github.com/uva-cs3240-f22/project-a-27)
+Project Link: [https://github.com/uva-cs3240-f22/project-a-27](https://github.com/uva-cs3240-f22/project-a-27) (may not be publicly accessible)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,13 +178,11 @@ Thank you to the CS 3240 Staff for helping us accomplish this project, and Profe
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Citations
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
-[djangoproject.com]: #
-[Django-url]: https://www.djangoproject.com/
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[product-screenshot]: https://www.virginia.edu/sites/default/files/201904-sunset.jpg
-![image](https://user-images.githubusercontent.com/83975442/206331274-d01c67ed-16ac-456f-987b-076f7cf723cd.png)
+README template:
+https://github.com/othneildrew/Best-README-Template#readme
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
