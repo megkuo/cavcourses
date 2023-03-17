@@ -11,7 +11,7 @@ https://github.com/othneildrew/Best-README-Template#readme
     <img src="#" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h3 align="center">Group A-27: CavCourses/New Lous List</h3>
+  <h3 align="center">Group A-27: CavCourses/New Lou's List</h3>
 
   <p align="center">
     A website for browsing classes, creating class schedules, and viewing friends' schedules. Created for CS 3240: Advanced Software Development in a group project.
@@ -21,9 +21,9 @@ https://github.com/othneildrew/Best-README-Template#readme
     <br />
     <a href="https://github.com/megkuo/cavcourses">Project Page</a>
     ·
-    <a href="https://f22.cs3240.org/lutherslist.html">Luther's List API</a>
+    Luther's List API (now deprecated)
     ·
-    <a href="https://louslist.org/">Original Lous List</a>
+    <a href="https://louslist.org/">Original Lou's List</a>
   </p>
 </div>
 
@@ -55,7 +55,7 @@ https://github.com/othneildrew/Best-README-Template#readme
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is for the University of Virginia's CS 3240 (Advanced Software Development) course. Our team chose to build a Web App modeling the University of Virginia's beloved <a href="https://louslist.org/">Lous List</a>.
+This is for the University of Virginia's CS 3240 (Advanced Software Development) course. Our team chose to build a Web App modeling the University of Virginia's beloved <a href="https://louslist.org/">Lou's List</a>.
 
 Here are the project-specific requirements we implemented:
 * Students must be able to view and search classes, separated into logical categories (ex. by department).
@@ -110,6 +110,8 @@ This project is not flawless. Due to unforseen tragic events during the semester
 Known bugs:
 * Query issue that prevents some accounts from adding classes to their schedule
 * Some users profile pictures have trouble rendering
+
+UPDATE (March 17, 2023): The API we used to load courses from UVA's SIS is no longer supported. The website has now been updated to use the course information saved in the database from Fall 2022.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
