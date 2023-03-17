@@ -121,9 +121,10 @@ def get_depts(request):
     template_name = "classlist/class.html"
 
     #Access API
-    api_url = "http://luthers-list.herokuapp.com/api/deptlist?format=json"
-    depts_json = requests.get(api_url)
-    all_depts = depts_json.json()
+    # api_url = "http://luthers-list.herokuapp.com/api/deptlist?format=json"
+    # depts_json = requests.get(api_url)
+    # all_depts = depts_json.json()
+    all_depts = {}
     all_depts_search = []
 
     dept_names = {'ACCT': 'Accounting', 'AIRS': 'Air Science', 'ALAR': 'Architecture and Landscape Architecture', 'AM': 'Applied Mechanics', 'AMST': 'American Studies', 'ANTH': 'Anthropology', 'APMA': 'Applied Mathematics', 
@@ -154,109 +155,110 @@ def get_depts(request):
 
 
     a_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'A':
-            a_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'A':
+            a_depts.append(d)
+            
     b_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'B':
-            b_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'B':
+            b_depts.append(d)
     c_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'C':
-            c_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'C':
+            c_depts.append(d)
     d_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'D':
-            d_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'D':
+            d_depts.append(d)
     e_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'E':
-            e_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'E':
+            e_depts.append(d)
     f_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'F':
-            f_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'F':
+            f_depts.append(d)
     g_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'G':
-            g_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'G':
+            g_depts.append(d)
     h_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'H':
-            h_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'H':
+            h_depts.append(d)
     i_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'I':
-            i_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'I':
+            i_depts.append(d)
     j_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'J':
-            j_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'J':
+            j_depts.append(d)
     k_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'K':
-            k_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'K':
+            k_depts.append(d)
     l_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'L':
-            l_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'L':
+            l_depts.append(d)
     m_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'M':
-            m_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'M':
+            m_depts.append(d)
     n_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'N':
-            n_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'N':
+            n_depts.append(d)
     o_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'O':
-            o_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'O':
+            o_depts.append(d)
     p_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'P':
-            p_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'P':
+            p_depts.append(d)
     q_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'Q':
-            q_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'Q':
+            q_depts.append(d)
     r_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'R':
-            r_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'R':
+            r_depts.append(d)
     s_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'S':
-            s_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'S':
+            s_depts.append(d)
     t_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'T':
-            t_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'T':
+            t_depts.append(d)
     u_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'U':
-            u_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'U':
+            u_depts.append(d)
     v_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'V':
-            v_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'V':
+            v_depts.append(d)
     w_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'W':
-            w_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'W':
+            w_depts.append(d)
     x_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'X':
-            x_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'X':
+            x_depts.append(d)
     y_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'Y':
-            y_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'Y':
+            y_depts.append(d)
     z_depts = []
-    for d in all_depts:
-        if d['subject'][0] == 'Z':
-            z_depts.append(d['subject'])
+    for d in dept_names.items():
+        if d[1][0] == 'Z':
+            z_depts.append(d)
             
 
 
@@ -275,6 +277,11 @@ def get_depts(request):
                 all_depts_search = []
                 all_depts_search.append(dept_dict)
                 break
+
+    # dept_names = {}
+    # for key in dept_names:
+
+    #     dept_names[key] = 1
             
     context = {'form':form, "all_depts_search":all_depts_search, 'dept_names':dept_names, 'a_depts':a_depts, 'b_depts':b_depts, 'c_depts':c_depts, 'd_depts':d_depts, 'e_depts':e_depts, 'f_depts':f_depts, 'g_depts':g_depts, 'h_depts':h_depts, 'i_depts':i_depts, 'j_depts':j_depts, 'k_depts':k_depts, 'l_depts':l_depts, 'm_depts':m_depts, 'n_depts':n_depts, 'o_depts':o_depts, 'p_depts':p_depts, 'q_depts':q_depts, 'r_depts':r_depts, 's_depts':s_depts, 't_depts':t_depts, 'u_depts':u_depts, 'v_depts':v_depts, 'w_depts':w_depts, 'x_depts':x_depts, 'y_depts':y_depts, 'z_depts':z_depts}
     
@@ -288,157 +295,157 @@ def get_depts(request):
 def update_courses_from_API(dept_abbr):
     
     #Access API
-    api_url = "http://luthers-list.herokuapp.com/api/dept/" + dept_abbr + "/?format=json"
-    dept_json = requests.get(api_url)
-    all_dept_classes = dept_json.json()
+    # api_url = "http://luthers-list.herokuapp.com/api/dept/" + dept_abbr + "/?format=json"
+    # dept_json = requests.get(api_url)
+    # all_dept_classes = dept_json.json()
     
     if(Department.objects.filter(dept_abbr=dept_abbr).exists()):
         dept = Department.objects.get(dept_abbr=dept_abbr)
     else:
         dept = Department(dept_abbr=dept_abbr)
-        dept.save()
+    #     dept.save()
 
     #Assign all fields
 
 
-    for course in all_dept_classes:
+    # for course in Course.objects.get(department=dept_abbr):
         
-        instructor_name = course["instructor"]["name"]
-        instructor_email = course["instructor"]["email"]
+        # instructor_name = course["instructor"]["name"]
+        # instructor_email = course["instructor"]["email"]
         
-        if(Instructor.objects.filter(name=instructor_name, email=instructor_email).exists()):
-            instructor_obj = Instructor.objects.get(name=instructor_name, email=instructor_email)
-        else:
-            instructor_obj = Instructor(name=instructor_name, email=instructor_email)
-            instructor_obj.save()
+        # if(Instructor.objects.filter(name=instructor_name, email=instructor_email).exists()):
+        #     instructor_obj = Instructor.objects.get(name=instructor_name, email=instructor_email)
+        # else:
+        #     instructor_obj = Instructor(name=instructor_name, email=instructor_email)
+        #     instructor_obj.save()
 
-        update_timestamp = timezone.now()
-        sem_code = course["semester_code"]
-        course_title = course["subject"] + " " + course["catalog_number"]
-        course_description = course["description"]
-        num_units = course["units"]
-        catalog_num = course['catalog_number']
+        # update_timestamp = timezone.now()
+        # sem_code = course["semester_code"]
+        # course_title = course["subject"] + " " + course["catalog_number"]
+        # course_description = course["description"]
+        # num_units = course["units"]
+        # catalog_num = course['catalog_number']
 
-        if(Course.objects.filter(title=course_title).exists()):
-            course_obj = Course.objects.get(title=course_title)
-            course_obj.catalog_number = catalog_num
-            # course_obj.sections = []
-        else:
-            course_obj = Course(title=course_title,
-                                description=course_description,
-                                units=num_units,
-                                semester_code = sem_code,
-                                last_updated = update_timestamp,
-                                department = dept,
-                                subject = course["subject"],
-                                # sections = [],
-                                catalog_number = catalog_num
-                                )
-            course_obj.save()
+        # if(Course.objects.filter(title=course_title).exists()):
+        #     course_obj = Course.objects.get(title=course_title)
+        #     course_obj.catalog_number = catalog_num
+        #     # course_obj.sections = []
+        # else:
+        #     course_obj = Course(title=course_title,
+        #                         description=course_description,
+        #                         units=num_units,
+        #                         semester_code = sem_code,
+        #                         last_updated = update_timestamp,
+        #                         department = dept,
+        #                         subject = course["subject"],
+        #                         # sections = [],
+        #                         catalog_number = catalog_num
+        #                         )
+        #     course_obj.save()
 
 
-        section_id = course["course_number"]
-        section_num = course["course_section"]
-        course_component = course["component"]
-        section_capacity = course["class_capacity"]
-        section_wait_list = course["wait_list"]
-        section_wait_cap = course["wait_cap"]
-        section_enrollment = course["enrollment_total"]
-        section_available_enrollment = course["enrollment_available"]
-        section_topic = course["topic"]
+        # section_id = course["course_number"]
+        # section_num = course["course_section"]
+        # course_component = course["component"]
+        # section_capacity = course["class_capacity"]
+        # section_wait_list = course["wait_list"]
+        # section_wait_cap = course["wait_cap"]
+        # section_enrollment = course["enrollment_total"]
+        # section_available_enrollment = course["enrollment_available"]
+        # section_topic = course["topic"]
 
-        section_dept = course["subject"]
-        section_course_num = course["catalog_number"]
+        # section_dept = course["subject"]
+        # section_course_num = course["catalog_number"]
 
-        # this was causing an issue with KINE 2000, where both meetings wouldn't show
-        # trying live loading for section as well 
+        # # this was causing an issue with KINE 2000, where both meetings wouldn't show
+        # # trying live loading for section as well 
         
-        if(Section.objects.filter(section_id=section_id).exists()):
-            section = Section.objects.get(section_id=section_id)
-        else:
-            section = Section(
-                course_dept = section_dept,
-                course_num = section_course_num,
-                section_id = section_id,
-                section_number = section_num,
-                instructor = instructor_obj,
-                component = course_component,
-                capacity = section_capacity,
-                wait_list = section_wait_list,
-                wait_cap = section_wait_cap,
-                enrollment_total = section_enrollment,
-                enrollment_available = section_available_enrollment,
-                topic = section_topic, #This may belong in course
-                course = course_obj
-                )
-            section.save()
+        # if(Section.objects.filter(section_id=section_id).exists()):
+        #     section = Section.objects.get(section_id=section_id)
+        # else:
+        #     section = Section(
+        #         course_dept = section_dept,
+        #         course_num = section_course_num,
+        #         section_id = section_id,
+        #         section_number = section_num,
+        #         instructor = instructor_obj,
+        #         component = course_component,
+        #         capacity = section_capacity,
+        #         wait_list = section_wait_list,
+        #         wait_cap = section_wait_cap,
+        #         enrollment_total = section_enrollment,
+        #         enrollment_available = section_available_enrollment,
+        #         topic = section_topic, #This may belong in course
+        #         course = course_obj
+        #         )
+        #     section.save()
 
-        meetings = course["meetings"]
-        for meeting in meetings:
-            meeting_days = meeting["days"]
-            meeting_start_time = meeting["start_time"]
-            if meeting_start_time == "":
-                meeting_start_time = "00.00.00.000000-05:00"
-            meeting_end_time = meeting["end_time"]
-            if meeting_end_time == "":
-                meeting_end_time = "00.00.00.000000-05:00"
-            meeting_location = meeting["facility_description"]
-            meeting_section = section
-            if meeting_location == "-":
-                meeting_location = "TBA"
+        # meetings = course["meetings"]
+        # for meeting in meetings:
+        #     meeting_days = meeting["days"]
+        #     meeting_start_time = meeting["start_time"]
+        #     if meeting_start_time == "":
+        #         meeting_start_time = "00.00.00.000000-05:00"
+        #     meeting_end_time = meeting["end_time"]
+        #     if meeting_end_time == "":
+        #         meeting_end_time = "00.00.00.000000-05:00"
+        #     meeting_location = meeting["facility_description"]
+        #     meeting_section = section
+        #     if meeting_location == "-":
+        #         meeting_location = "TBA"
             
-            # this was causing an issue with KINE 2000, where both meetings wouldn't show, made it so each meeting would pair with an individual section
-            if(Meetings.objects.filter(days=meeting_days, start_time=meeting_start_time, end_time=meeting_end_time, facility_description=meeting_location, section=section).exists()):
-                meetings_obj = Meetings.objects.get(days=meeting_days, start_time=meeting_start_time, end_time=meeting_end_time, facility_description=meeting_location, section=section)
-            else:
-                meetings_obj = Meetings(days=meeting_days,
-                                        start_time=meeting_start_time,  
-                                        end_time=meeting_end_time,
-                                        facility_description=meeting_location,
-                                        section = meeting_section
-                                        )
+        #     # this was causing an issue with KINE 2000, where both meetings wouldn't show, made it so each meeting would pair with an individual section
+        #     if(Meetings.objects.filter(days=meeting_days, start_time=meeting_start_time, end_time=meeting_end_time, facility_description=meeting_location, section=section).exists()):
+        #         meetings_obj = Meetings.objects.get(days=meeting_days, start_time=meeting_start_time, end_time=meeting_end_time, facility_description=meeting_location, section=section)
+        #     else:
+        #         meetings_obj = Meetings(days=meeting_days,
+        #                                 start_time=meeting_start_time,  
+        #                                 end_time=meeting_end_time,
+        #                                 facility_description=meeting_location,
+        #                                 section = meeting_section
+        #                                 )
             
-            # print(course_obj)
-            # print(course_obj)
-            # setting boolean fields for meetings
-            if meetings_obj.days.find("Mo") != -1:
-                meetings_obj.monday = True
-                # print("Monday")
-                # print("Monday")
-            if meetings_obj.days.find("Tu") != -1:
-                meetings_obj.tuesday = True
-                # print("Tuesday")
-                # print("Tuesday")
-            if meetings_obj.days.find("We") != -1:
-                meetings_obj.wednesday = True
-                # print("Wednesday")
-                # print("Wednesday")
-            if meetings_obj.days.find("Th") != -1:
-                meetings_obj.thursday = True
-                # print("Thursday")
-                # print("Thursday")
-            if meetings_obj.days.find("Fr") != -1:
-                meetings_obj.friday = True
-                # print("Friday")
-                # print("Friday")
-            if meetings_obj.days.find("Sa") != -1:
-                meetings_obj.saturday = True
-                # print("Friday")
-                # print("Friday")
-            if meetings_obj.days.find("Su") != -1:
-                meetings_obj.sunday = True
-                # print("Friday")
-                # print("Friday")
+        #     # print(course_obj)
+        #     # print(course_obj)
+        #     # setting boolean fields for meetings
+        #     if meetings_obj.days.find("Mo") != -1:
+        #         meetings_obj.monday = True
+        #         # print("Monday")
+        #         # print("Monday")
+        #     if meetings_obj.days.find("Tu") != -1:
+        #         meetings_obj.tuesday = True
+        #         # print("Tuesday")
+        #         # print("Tuesday")
+        #     if meetings_obj.days.find("We") != -1:
+        #         meetings_obj.wednesday = True
+        #         # print("Wednesday")
+        #         # print("Wednesday")
+        #     if meetings_obj.days.find("Th") != -1:
+        #         meetings_obj.thursday = True
+        #         # print("Thursday")
+        #         # print("Thursday")
+        #     if meetings_obj.days.find("Fr") != -1:
+        #         meetings_obj.friday = True
+        #         # print("Friday")
+        #         # print("Friday")
+        #     if meetings_obj.days.find("Sa") != -1:
+        #         meetings_obj.saturday = True
+        #         # print("Friday")
+        #         # print("Friday")
+        #     if meetings_obj.days.find("Su") != -1:
+        #         meetings_obj.sunday = True
+        #         # print("Friday")
+        #         # print("Friday")
                 
-            # in cases where there are no meetings, none of these will be true (ex. CS 3240's lab section)
+        #     # in cases where there are no meetings, none of these will be true (ex. CS 3240's lab section)
             
             
             
-            meetings_obj.save()
+        #     meetings_obj.save()
             
         
-        course_obj.save()
-        # print(course_obj)
+        # course_obj.save()
+        # # print(course_obj)
 
 
 
@@ -454,13 +461,14 @@ def delete_all_courses_from_API():
     Department.objects.all().delete()
 
 def load_all_courses_from_API():
-    api_url = "http://luthers-list.herokuapp.com/api/deptlist?format=json"
-    depts_json = requests.get(api_url)
-    all_depts = depts_json.json()
+    # api_url = "http://luthers-list.herokuapp.com/api/deptlist?format=json"
+    # depts_json = requests.get(api_url)
+    # all_depts = depts_json.json()
 
-    for dept in all_depts:
-        print(dept['subject'])
-        update_courses_from_API(dept['subject'])
+    # for dept in all_depts:
+    #     print(dept['subject'])
+    #     update_courses_from_API(dept['subject'])
+    pass
 
 def load_dept_courses_from_db(request, dept_abbr):
     template_name = "classlist/classes_by_dept.html"
